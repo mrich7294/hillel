@@ -23,7 +23,7 @@ while cnt < time_year:
             # per = sum_credit / time_month * percent / 100
             # sum_percent = per / (1 - 1 / (1 + time_month * percent) ** time_month) * time_year
             sum_payment_all = sum_payment + sum_percent
-            print(f' {i} {sum_percent:{2}2.2f} {sum_payment:{1}5.2f} {sum_payment_all:{2}1.2f}')
+            print(f' {i} {sum_percent:{2}0.2f} {sum_payment:{1}5.2f} {sum_payment_all:{2}1.2f}')
             sum_credit -= sum_payment
 
         elif cnt > 1:
@@ -35,6 +35,6 @@ while cnt < time_year:
             # per = sum_credit / time_month * percent / 100
             # sum_percent = per / (1 - 1 / (1 + time_month * percent) ** time_month) * time_year
             sum_payment_all = sum_payment + sum_percent
-            print(f' {i} {sum_percent:{2}2.2f} {sum_payment:{1}5.2f} {sum_payment_all:{2}1.2f}')
+            print(f' {i:{2}2.0f} {sum_percent:{2}2.2f} {sum_payment:{1}5.2f} {sum_payment_all:{2}1.2f}')
             sum_credit -= sum_payment
     cnt += 1
