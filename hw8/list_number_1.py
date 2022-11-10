@@ -1,6 +1,6 @@
 import random
 # list_ = []
-new_list = []
+# new_list = []
 list_1 = [(random.randint(10, 250)) for i in range(20)]
 print('Вхідні дані: \n', list_1)
 # for j in range(len(list_1)):
