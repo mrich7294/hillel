@@ -2,6 +2,7 @@ import random
 
 
 def search_number(low_limit, up_limit):
+    """Перевіряє чи числа прості!"""
     lst = []
     for i in range(low_limit, up_limit + 1):
         for j in range(2, i):
