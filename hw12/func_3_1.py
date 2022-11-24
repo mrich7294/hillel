@@ -8,9 +8,9 @@ def input_int(string_int: str):
         if string_int.isdigit() is not True:
             string_int = input('Ведіть дані ще раз: ')
         else:
-            strin_int = int(string_int)
+            str_to_int = int(string_int)
             break
-    return strin_int
+    return str_to_int
 
 
 def search_number(low_limit, up_limit):
