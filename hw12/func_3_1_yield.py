@@ -7,7 +7,7 @@ def input_int(string_int: str):
     while True:
         if string_int.isdigit() is not True:
             string_int = input('Ведіть дані ще раз: ')
-        else:
+          else:
             str_to_int = int(string_int)
             break
     return str_to_int
