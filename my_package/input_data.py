@@ -65,7 +65,7 @@ def input_password():
 
 
 def input_str_to_int(string_int: str) -> int:
-    """Функція перевіряє чи введене значення є ціле число"""
+    """Функція перевіряє чи введене значення є ціле число більше ніж 4"""
     while True:
         if string_int.isdigit() is not True:
             print('Введіть ціле число більше 4!')

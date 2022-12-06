@@ -1,6 +1,3 @@
-import random
-
-
 def buble_sort(list_to_sort: list) -> list:
     """Sort to list buble to up"""
     n = len(list_to_sort)
@@ -17,14 +14,14 @@ def rock_sort(list_to_sort: list) -> list:
     n = len(list_to_sort)
     for i in range(n):
         for j in range(n-1-i):
-            if list_to_sort[j] < list_to_sort[j+1]:
+            if list_to_sort[j] > list_to_sort[j+1]:
                 list_to_sort[j], list_to_sort[j + 1] = \
                     list_to_sort[j+1], list_to_sort[j]
     return list_to_sort
 
 
 def selection_sort(list_to_sort: list) -> list:
-    """Sort to list selection method"""
+    """Sort to list selection method to up"""
     for i in range(len(list_to_sort)):
         minimum = i
         for j in range(i+1, len(list_to_sort)):
@@ -36,6 +33,4 @@ def selection_sort(list_to_sort: list) -> list:
 
 
 if __name__ == "__main__":
-    lst = [random.randint(0, 50) for _ in range(0, 20)]
-    print(lst)
-    print(selection_sort(lst))
+    pass
