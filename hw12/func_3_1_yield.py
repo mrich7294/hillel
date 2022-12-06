@@ -1,13 +1,10 @@
-low_lim, up_lim = input("Введіть нижню межу пошуку простого числа: "), \
-                  input("Введіть верхню межу пошуку простого числа: ")
-
 
 def input_int(string_int: str):
     """Функція перевіряє чи введене значення є ціле число"""
     while True:
         if string_int.isdigit() is not True:
             string_int = input('Ведіть дані ще раз: ')
-          else:
+        else:
             str_to_int = int(string_int)
             break
     return str_to_int
@@ -30,15 +27,18 @@ def search_number(low_limit, up_limit):
         low_limit += 1
 
 
-a = input_int(low_lim)
-b = input_int(up_lim)
-if a < b:
-    lst = []
-    for ele in search_number(a, b):
-        lst.append(ele)
-    print(f'Прості числа в діапазоні {a} - {b}: ', lst)
-else:
-    lst = []
-    for ele in search_number(b, a):
-        lst.append(ele)
-    print(f'Прості числа в діапазоні {b} - {a}: ', lst)
+if __name__ == "__main__":
+    low_lim, up_lim = input("Введіть нижню межу пошуку простого числа: "), \
+                      input("Введіть верхню межу пошуку простого числа: ")
+    a = input_int(low_lim)
+    b = input_int(up_lim)
+    if a < b:
+        lst = []
+        for ele in search_number(a, b):
+            lst.append(ele)
+        print(f'Прості числа в діапазоні {a} - {b}: ', lst)
+    else:
+        lst = []
+        for ele in search_number(b, a):
+            lst.append(ele)
+        print(f'Прості числа в діапазоні {b} - {a}: ', lst)

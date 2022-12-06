@@ -1,8 +1,6 @@
-from my_package import input_data as idd
-
 from random import randint
 
-from my_package import my_sort
+from my_package import my_sort, input_data as idd
 
 
 def sort_to_matrix():
