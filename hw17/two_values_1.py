@@ -1,6 +1,6 @@
 
 def decor(func):
-
+    """Об'єднання значень"""
     def two_values():
         firth_value, second_value = func()
         try:
